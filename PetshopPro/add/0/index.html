@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Petshop Pro &mdash; Cart</title>
+	</head>
+	<body>
+		<h1>Shopping Cart</h1>
+		<table>
+			<tr>
+				<th>Price</th>
+				<th>Name</th>
+				<th>Description</th>
+			</tr>
+			
+			<tr>
+				<td>$8.95</td>
+				<td>Kitten</td>
+				<td>8"x10" color glossy photograph of a kitten.</td>
+			</tr>
+			
+		</table>
+		<p><b>Total: $8.95</b></p>
+		<form action="checkout" method="POST">
+			<input type="hidden" name="cart" value="[[0, {&#34;name&#34;: &#34;Kitten&#34;, &#34;desc&#34;: &#34;8\&#34;x10\&#34; color glossy photograph of a kitten.&#34;, &#34;logo&#34;: &#34;kitten.jpg&#34;, &#34;price&#34;: 8.95}]]">
+			<p><input type="submit" value="Check Out"></p>
+		</form>
+	</body>
+</html>
